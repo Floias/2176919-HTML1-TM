@@ -27,12 +27,54 @@
           <img class="logo" src="images/logo.svg" alt="Логотип интернет-магазина «Техномарт»." width="220" height="50">
         </a>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="main-search" for="main-search">
-            <span class="visually-hidden">Поиск по сайту.</span>
-          </label>
-          <input class="search-input" id="main-search" placeholder="Поиск:" type="search" name="main-search" required>
+          <label class="main-search" for="main-search">Поиск:</label>
+          <input class="search-input" id="main-search" placeholder="  Поиск по сайту" type="search" name="main-search" required>
         </form>
-        <a class="login-button link link-button" href="#">Войти</a>
+<!--        Вид блока авторизации меняется добавлением класса login-form-current-->
+        <form class="login-form login-form-current" action="https://echo.htmlacademy.ru/" method="post">
+          <a class="login-button link link-button" href="#">Войти</a>
+<!--          Окно логина открывается добавлением класса popup-open-->
+          <div class="login-popup">
+            <h2 class="login-popup-title">Личный кабинет</h2>
+            <button class="popup-close-button" type="button">
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
+            <label class="login-popup-label" for="popap-login">
+              <span class="visually-hidden">Введите ваш логин.</span>
+              <input class="login-popup-input" type="text" id="popap-login" name="login" placeholder="Логин" required>
+            </label>
+            <label class="login-popup-label" for="popap-password">
+              <span class="visually-hidden">Введите ваш e-mail.</span>
+              <input class="login-popup-input" type="password" id="popap-password" name="password" placeholder="Пароль" required>
+            </label>
+            <div class="login-popup-link-wrapper">
+             <label class="control popup-control" for="remember">
+               <input class="visually-hidden control-input" id="remember" type="checkbox" name="remember" value="remember" checked>
+               <span class="control-mark popup-mark"></span>
+               <span class="control-label">Запомнить меня</span>
+              </label>
+              <a class="login-popup-link" href="#">Забыл пароль</a>
+            </div>
+            <div class="login-popup-wrapper">
+              <button class="popup-button popup-button-entrance link-button" type="submit">Войти</button>
+              <button class="popup-button popup-button-registration link-button" type="submit">Регистрация</button>
+            </div>
+          </div>
+        </form>
+<!--        Вид блока авторизации меняется добавлением класса login-form-current-->
+        <form class="login-form-logged" action="https://echo.htmlacademy.ru/" method="post">
+          <a class="login-button-logged link" href="#">Равшан Джамшутович</a>
+<!--          Окно логина открывается добавлением класса popup-open-->
+          <div class="login-popup-logged">
+            <h2 class="login-popup-logged-title login-popup-title">Здравствуйте, Равшан&nbsp;Джамшутович</h2>
+            <button class="popup-close-button" type="button">
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
+            <a class="popup-logged-link link link-button">Мои заказы</a>
+            <a class="popup-logged-link link link-button">Личный кабинет</a>
+            <button class="popup-button popup-button-out link-button" type="submit">Выйти</button>
+          </div>
+        </form>
       </div>
     </div>
     <nav class="navigation">
@@ -106,41 +148,43 @@
         </div>
       </div>
     </section>
-    <section class="main-slider">
+    <section class="information">
       <div class="information-container">
         <div class="information-wrapper wrapper">
           <h2 class="visually-hidden">Информация.</h2>
-          <div class="slider-control">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар.</span>
+          <div class="main-slider">
+            <div class="slider-control">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущий товар.</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующий товар.</span>
             </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар.</span>
-          </button>
+            </div>
+            <ul class="slider-list list">
+              <li class="slider-item slider-drills slider-active">
+                <h2 class="slider-title fira-title">Дрели</h2>
+                <p class="slider-text">Соседям на радость!</p>
+              </li>
+              <li class="slider-item slider-perforators">
+                <h2 class="slider-title fira-title">Перфораторы</h2>
+                <p class="slider-text">Соседям на радость!</p>
+              </li>
+            </ul>
+            <a class="catalog-open link link-button" href="#">Открыть каталог</a>
+            <ul class="slider-pagination list">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button pagination-active" type="button">
+                  <span class="visually-hidden">Посмотрите на наши дрели.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">Посмотрите на наши перфораторы.</span>
+                </button>
+            </li>
+            </ul>
           </div>
-          <ul class="slider-list list">
-            <li class="slider-item slider-drills slider-active">
-              <h2 class="slider-title fira-title">Дрели</h2>
-              <p class="slider-text">Соседям на радость!</p>
-            </li>
-            <li class="slider-item slider-perforators">
-              <h2 class="slider-title fira-title">Перфораторы</h2>
-              <p class="slider-text">Соседям на радость!</p>
-            </li>
-          </ul>
-          <a class="catalog-open link link-button" href="#">Открыть каталог</a>
-          <ul class="slider-pagination list">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button pagination-active" type="button">
-                <span class="visually-hidden">Посмотрите на наши дрели.</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">Посмотрите на наши перфораторы.</span>
-              </button>
-          </li>
-          </ul>
           <ul class="discounts-delivery-list list">
             <li class="promo-item discounts-item">
               <h3 class="promo-title">Скидки 50%</h3>
@@ -202,7 +246,7 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control" for="MAKIta">
-                    <input class="visually-hidden control-input" id="MAKIta" type="checkbox" name="manufacturers" value="MAKIta"  checked>
+                    <input class="visually-hidden control-input" id="MAKIta" type="checkbox" name="manufacturers" value="MAKIta" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">MAKIta</span>
                   </label>
@@ -263,7 +307,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate">22500 ₽</span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -275,7 +319,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate">22500 ₽</span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -287,7 +331,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate"></span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -299,7 +343,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate"></span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -311,7 +355,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate"></span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -323,7 +367,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate">22500 ₽</span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -335,7 +379,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate">22500 ₽</span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -347,7 +391,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate">22500 ₽</span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -359,7 +403,7 @@
                       <button class="product-button link-button product-button-bookmarks" type="button">В закладки</button>
                     </div>
                     <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                    <span class="price-outdate"></span>
+                    <del class="price-outdate link-button">22500 ₽</del>
                     <button class="product-card-price link-button">15500 ₽</button>
                   </a>
                 </li>
@@ -461,7 +505,7 @@
         <div class="subscribe-section">
           <span class="footer-text">Обратная связь:</span>
           <a class="footer-emale link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <p class="subscribe-description description">Получайте лучшие предложения</p>
+          <p class="subscribe-description">Получайте лучшие предложения</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe">
               <span class="visually-hidden">Введите ваш емэйл.</span>
