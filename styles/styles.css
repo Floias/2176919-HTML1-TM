@@ -701,7 +701,7 @@ body {
   border-radius: 50%;
   border: solid 2px #3d546f;
   cursor: pointer;
-  flex-shrink: 0;
+  padding: 0;
 }
 
 .range-wrapper-inputs {
