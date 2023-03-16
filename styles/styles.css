@@ -695,13 +695,16 @@ body {
 
 .range-toggle {
   position: absolute;
+  padding: 0;
+  margin: 0;
   width: 20px;
   height: 20px;
+  line-height: 0;
+  font-size: 0;
   background: #ffffff;
   border-radius: 50%;
   border: solid 2px #3d546f;
   cursor: pointer;
-  padding: 0;
 }
 
 .range-wrapper-inputs {
