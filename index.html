@@ -36,7 +36,7 @@
 <!--          Окно логина открывается добавлением класса popup-open-->
           <div class="login-popup">
             <h2 class="login-popup-title">Личный кабинет</h2>
-            <button class="popup-close-button" type="button">
+            <button class="popup-close-button interactive-styles" type="button">
               <span class="visually-hidden">Закрыть.</span>
             </button>
             <label class="login-popup-label" for="popap-login">
@@ -52,9 +52,9 @@
              <label class="control popup-control" for="remember">
                <input class="visually-hidden control-input" id="remember" type="checkbox" name="remember" value="remember" checked>
                <span class="control-mark popup-mark"></span>
-               <span class="control-label">Запомнить меня</span>
+               <span class="control-label interactive-styles">Запомнить меня</span>
               </label>
-              <a class="login-popup-link" href="#">Забыл пароль</a>
+              <a class="login-popup-link interactive-styles" href="#">Забыл пароль</a>
             </div>
             <div class="login-popup-wrapper">
               <button class="popup-button popup-button-entrance link-button green-button" type="submit">Войти</button>
@@ -68,11 +68,11 @@
 <!--          Окно логина открывается добавлением класса popup-open-->
           <div class="login-popup-logged">
             <h2 class="login-popup-logged-title login-popup-title">Здравствуйте, Равшан&nbsp;Джамшутович</h2>
-            <button class="popup-close-button" type="button">
+            <button class="popup-close-button interactive-styles" type="button">
               <span class="visually-hidden">Закрыть.</span>
             </button>
-            <a class="popup-logged-link link link-button">Мои заказы</a>
-            <a class="popup-logged-link link link-button">Личный кабинет</a>
+            <a class="popup-logged-link link link-button interactive-styles">Мои заказы</a>
+            <a class="popup-logged-link link link-button interactive-styles">Личный кабинет</a>
             <button class="popup-button popup-button-out link-button button-green-outline" type="submit">Выйти</button>
           </div>
         </form>
@@ -228,10 +228,12 @@
                 </div>
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label cost" for="cost-from">
+                    <span class="visually-hidden">Сортировка по цене от.</span>
                     <input class="cost-input cost-min" id="cost-from" type="number" name="cost-from" value="0">
                   </label>
                   <span class="delimiter"> &ndash; </span>
                   <label class="catalog-filter-label cost" for="cost-to">
+                    <span class="visually-hidden">до.</span>
                     <input class="cost-input cost-max" id="cost-to" type="number" name="cost-to" value="30000">
                   </label>
                 </div>
@@ -277,7 +279,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-powered">
               <legend class="catalog-filter-title">Питание</legend>
               <ul class="catalog-filter-list list">
                 <li class="catalog-filter-item">
@@ -316,7 +318,21 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
+                  </a>
+                  <div class="product-price">
+                    <del class="price-outdate link-button">22500 ₽</del>
+                    <button class="product-card-price link-button red-button" type="button">15500 ₽</button>
+                  </div>
+                </li>
+                <li class="product-card">
+                  <div class="product-card-image">
+                    <img class="card-image" src="images/perforator-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000." width="216" height="180">
+                    <button class="product-button link-button product-button-basket green-button" type="button">Купить</button>
+                    <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
+                  </div>
+                  <a class="product-card-link link interactive-styles" href="#">
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button">22500 ₽</del>
@@ -330,21 +346,7 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                  </a>
-                  <div class="product-price">
-                    <del class="price-outdate link-button">22500 ₽</del>
-                    <button class="product-card-price link-button red-button" type="button">15500 ₽</button>
-                  </div>
-                </li>
-                <li class="product-card new-ribbon">
-                  <div class="product-card-image">
-                    <img class="card-image" src="images/perforator-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000." width="216" height="180">
-                    <button class="product-button link-button product-button-basket green-button" type="button">Купить</button>
-                    <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
-                  </div>
-                  <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button"></del>
@@ -358,7 +360,7 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button"></del>
@@ -372,7 +374,7 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button"></del>
@@ -386,7 +388,7 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button">22500 ₽</del>
@@ -400,7 +402,21 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
+                  </a>
+                  <div class="product-price">
+                    <del class="price-outdate link-button">22500 ₽</del>
+                    <button class="product-card-price link-button red-button" type="button">15500 ₽</button>
+                  </div>
+                </li>
+                <li class="product-card">
+                  <div class="product-card-image">
+                    <img class="card-image" src="images/perforator-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000." width="216" height="180">
+                    <button class="product-button link-button product-button-basket green-button" type="button">Купить</button>
+                    <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
+                  </div>
+                  <a class="product-card-link link interactive-styles" href="#">
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button">22500 ₽</del>
@@ -414,21 +430,7 @@
                     <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
                   </div>
                   <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
-                  </a>
-                  <div class="product-price">
-                    <del class="price-outdate link-button">22500 ₽</del>
-                    <button class="product-card-price link-button red-button" type="button">15500 ₽</button>
-                  </div>
-                </li>
-                <li class="product-card new-ribbon">
-                  <div class="product-card-image">
-                    <img class="card-image" src="images/perforator-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000." width="216" height="180">
-                    <button class="product-button link-button product-button-basket green-button" type="button">Купить</button>
-                    <button class="product-button link-button product-button-bookmarks button-green-outline" type="button">В закладки</button>
-                  </div>
-                  <a class="product-card-link link interactive-styles" href="#">
-                    <h3 class="product-card-title">Перфоратор BOSCH&nbsp;BFG 3000</h3>
+                    <h3 class="product-card-title">Перфоратор BOSCH BFG&nbsp;3000</h3>
                   </a>
                   <div class="product-price">
                     <del class="price-outdate link-button"></del>
@@ -474,7 +476,7 @@
             </li>
             <li class="servises-item servises-credit">
               <h3 class="servises-subtitle">Кредит</h3>
-              Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. Все как в банке, только проще!
+              Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. <br> Все как в банке, только проще!
             </li>
           </ul>
         </div>
@@ -493,7 +495,7 @@
           <div class="main-contacts-map">
             <h3 class="description-title fira-title">Контакты</h3>
             <p class="description-text">Вы можете забрать товар сами,  заехав в наш офис:</p>
-            <a class="contacts-map-link" href="#">
+            <a class="contacts-map-link" href="https://yandex.ru/maps">
               <img class="contacts-map" src="images/map.jpg" alt="Карта офиса «Техномарт»." width="500" height="347">
             </a>
           </div>
@@ -539,7 +541,9 @@
               <span class="visually-hidden">Введите ваш емэйл.</span>
             </label>
             <input class="subscribe-input" type="email" name="subscribe-email" placeholder="email@example.com" id="subscribe" required>
-            <button class="subscribe-button green-button" type="submit"></button>
+            <button class="subscribe-button green-button" type="submit">
+              <span class="visually-hidden">Нажмите на эту кнопку для подписки на наши специальные предложения.</span>
+            </button>
           </form>
         </div>
       </div>
@@ -548,7 +552,7 @@
       <div class="footer-copyright-wrapper wrapper">
         <span class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</span>
         <span class="footer-copyright">Разработано —
-          <a class="footer-copyright-link link" href="#">htmlacademy.ru</a>
+          <a class="footer-copyright-link link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </span>
       </div>
     </div>
